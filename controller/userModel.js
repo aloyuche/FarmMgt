@@ -10,6 +10,8 @@ module.export = {
         status: user ? 201 : 401,
         message: user ? "success" : "registration unsuccessful",
       });
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   },
 };
